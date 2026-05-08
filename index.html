@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Adivinar número</title>
+</head>
+<body>
+    <div class="">
+        <h1 class="text-center font-bold">Frio / Tibio / Caliente</h1>
+    </div>
+    <main>
+        <form onsubmit="">
+            <p>
+            <label for="">Escribe un número entre 1 y 500:</label>
+            <input id="numInput" type="number" min="1" max="500" required>
+            </p>
+            <p>
+            <button onsubmit="submit"> ❓Adivinar  </button>
+            </p>
+        </form>
+        <p id="resultado"></p>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
