@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    <title>Adivinar número</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Adivinar número</title>
 </head>
-<body class="bg-slate-400 min-h-screen flex items-center justify-center px-4">
-    <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-6 space-y-6">
-        <h1 class="text-center text-2xl font-bold text-slate-800 mb-6">Frio / Tibio / Caliente</h1>
 
-        <form onsubmit=""  class="space-y-4 mt-4">
-            <label for="" class="block text-center text-slate-700 font-medium">Escribe un número entre 1 y 500:</label>
-            <input class="w-full text-center border border-slate-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400" id="numInput" type="number" min="1" max="500" required>
-            <button type="submit"  class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition"> ❓Adivinar  </button>
-        </form>
-        <p id="resultado" class="text-center mt-6 text-lg font-semibold text-slate-800"></p>
-    </div>
-    <script src="./app.js"></script>
+<body id="body" class="bg-gray-200 min-h-screen flex items-center justify-center transition-all duration-500">
+
+  <div class="bg-white shadow-2xl rounded-3xl p-10 w-full max-w-md text-center">
+
+    <h1 class="text-4xl font-bold mb-6 text-gray-800">
+      🎯 Adivina el Número
+    </h1>
+
+    <p class="text-gray-600 mb-4">
+      Ingresa un número entre 0 y 500
+    </p>
+
+    <input
+      id="numero"
+      type="number"
+      class="w-full border-2 border-gray-300 rounded-xl p-3 text-center text-xl focus:outline-none focus:border-blue-500"
+      placeholder="Ej: 250"
+    />
+
+    <button
+      id="btnAdivinar"
+      onclick="adivinar()"
+      class="mt-5 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition"
+    >
+      Adivinar
+    </button>
+
+    <div
+      id="mensaje"
+      class="mt-6 text-2xl font-bold"
+    ></div>
+
+  </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
