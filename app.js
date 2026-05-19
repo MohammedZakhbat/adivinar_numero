@@ -18,7 +18,7 @@ const numeroSecreto = Math.floor(Math.random() * 500) + 1;
 
   if (numeroUsuario === numeroSecreto) {
         mensaje.textContent = "🎉 ¡Ganaste!";
-        mensaje.className = "mt-6 text-3xl font-bold text-green-700";
+        mensaje.className = "mt-6 text-3xl font-bold text-green";
 
         body.className =
           "bg-green-400 min-h-screen flex items-center justify-center transition-all duration-500";
@@ -31,21 +31,21 @@ if (numeroUsuario < numeroSecreto) {
 
         if (distancia >= 50) {
           mensaje.textContent =
-            "❄️ Frío, frío: tu número es más pequeño que el mío";
+            "🧊 Frío, frío: tu número es más pequeño que el mío";
 
           body.className =
             "bg-blue-500 min-h-screen flex items-center justify-center transition-all duration-500";
 
         } else if (distancia >= 15 && distancia < 50) {
           mensaje.textContent =
-            "🌤️ Tibio, tibio: tu número es más pequeño que el mío";
+            "🪙 Tibio, tibio: tu número es más pequeño que el mío";
 
           body.className =
             "bg-yellow-300 min-h-screen flex items-center justify-center transition-all duration-500";
 
         } else {
           mensaje.textContent =
-            "🔥 Caliente, caliente: tu número es más pequeño que el mío";
+            "🚨 Caliente, caliente: tu número es más pequeño que el mío";
 
           body.className =
             "bg-red-500 min-h-screen flex items-center justify-center transition-all duration-500";
@@ -53,21 +53,21 @@ if (numeroUsuario < numeroSecreto) {
 
       } else {  if (distancia >= 50) {
           mensaje.textContent =
-            "❄️ Frío, frío: tu número es más grande que el mío";
+            "🧊 Frío, frío: tu número es más grande que el mío";
 
           body.className =
             "bg-blue-500 min-h-screen flex items-center justify-center transition-all duration-500";
 
         } else if (distancia >= 15 && distancia < 50) {
           mensaje.textContent =
-            "🌤️ Tibio, tibio: tu número es más grande que el mío";
+            "🪙 Tibio, tibio: tu número es más grande que el mío";
 
           body.className =
             "bg-yellow-300 min-h-screen flex items-center justify-center transition-all duration-500";
 
         } else {
           mensaje.textContent =
-            "🔥 Caliente, caliente: tu número es más grande que el mío";
+            "🚨 Caliente, caliente: tu número es más grande que el mío";
 
           body.className =
             "bg-red-500 min-h-screen flex items-center justify-center transition-all duration-500";
