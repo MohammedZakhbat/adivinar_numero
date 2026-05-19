@@ -41,7 +41,7 @@ if (numeroUsuario < numeroSecreto) {
             "🪙 Tibio, tibio: tu número es más pequeño que el mío";
 
           body.className =
-            "bg-yellow-300 min-h-screen flex items-center justify-center transition-all duration-500";
+            "bg-yellow-400 min-h-screen flex items-center justify-center transition-all duration-500";
 
         } else {
           mensaje.textContent =
